@@ -1,0 +1,138 @@
+/**Styling the background image**/
+#bgroundimg {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}
+/**Styling the description text**/
+#description {
+	color: white;
+	font-family: sans-serif;
+}
+#email {
+	text-decoration: underline;
+	color: white;
+	font-family: sans-serif;
+	z-index: 2;
+
+}
+#email2 {
+	color: white;
+	font-family: sans-serif;
+	z-index: 2;
+}
+/**Styling the reload button**/
+#homebtn {
+	opacity: 0;
+	background-color: #0088FF;
+	border: 1px solid #0055FF;
+	padding: 0.5em 1em;
+	border-radius: 0.1em;
+	color: white;
+	cursor: pointer;
+	animation-name: fadeincenter;
+	animation-duration: 1s;
+	animation-delay: 1.3s;
+	animation-fill-mode: forwards;
+}
+#title {
+	opacity: 0;
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 3em;
+	padding-top: .5em;
+	animation-name: fadeincenter;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+#name_email {
+	opacity: 0;
+	animation-name: fadeincenter;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+/**Styling the Navigation Bar**/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #0088FF;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	left: 0px;
+	top: 0px;
+	font-size: 1.1em;
+	font-style: "Lato", sans-serif;
+	letter-spacing: 1px;
+}
+/**Styling the navigation bar**/
+li {
+	float: left;
+}
+/**Styling the Navigation Bar**/
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding : 1em 1.2em;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	transition-delay: 0.2s;
+}
+/**Styling the Navigation Bar on hover**/
+li a:hover{
+	background-color: white;
+	color: #0088FF;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	transition-delay: 0s;
+}
+/**Styling the navigation bar when one page is selected**/
+.active {
+	background-color: #0099FF;
+}
+/**Stopping the hover animation for selected pages on the Navigation Bar**/
+.active:hover{
+	background-color: #0099FF;
+	color: white;
+}
+/**Fade in image of me**/
+@keyframes myimgfadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    from {padding-top: 4%;}
+    to {padding-top: 5%;}
+}
+/**Fade in animation coming from top**/
+@keyframes fadeintop {
+	from {opacity: 0;}
+	to {opacity: 1;}
+	from {padding-top: 5%;}
+	to {padding-top: 0%}
+}
+/**Fade in animation coming from left**/
+@keyframes fadeinleft {
+	from {opacity: 0;}
+	to {opacity: 1;}
+	from {padding-right: 10%;}
+	to {padding-right:0%;}
+}
+/**Fade in animation coming from center**/
+@keyframes fadeincenter {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes shrinkin {
+	from {opacity: 0;}
+	to {opacity: 1;}
+	from {font-size: 6em;}
+	to {font-size: 1em;}
+}
