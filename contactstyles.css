@@ -1,61 +1,7 @@
-/**Styling the background image**/
-#bgroundimg {
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	z-index: -1;
-}
 /**Styling the description text**/
 #description {
 	color: white;
 	font-family: sans-serif;
-}
-#email {
-	text-decoration: underline;
-	color: white;
-	font-family: sans-serif;
-	z-index: 2;
-
-}
-#email2 {
-	color: white;
-	font-family: sans-serif;
-	z-index: 2;
-}
-/**Styling the reload button**/
-#homebtn {
-	opacity: 0;
-	background-color: #0088FF;
-	border: 1px solid #0055FF;
-	padding: 0.5em 1em;
-	border-radius: 0.1em;
-	color: white;
-	cursor: pointer;
-	animation-name: fadeincenter;
-	animation-duration: 1s;
-	animation-delay: 1.3s;
-	animation-fill-mode: forwards;
-}
-#title {
-	opacity: 0;
-	color: white;
-	text-align: center;
-	font-family: sans-serif;
-	font-size: 3em;
-	padding-top: .5em;
-	animation-name: fadeincenter;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	animation-delay: 0.5s;
-}
-#name_email {
-	opacity: 0;
-	animation-name: fadeincenter;
-	animation-duration: 1s;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
 }
 /**Styling the Navigation Bar**/
 ul {
@@ -111,29 +57,4 @@ li a:hover{
     to {opacity: 1;}
     from {padding-top: 4%;}
     to {padding-top: 5%;}
-}
-/**Fade in animation coming from top**/
-@keyframes fadeintop {
-	from {opacity: 0;}
-	to {opacity: 1;}
-	from {padding-top: 5%;}
-	to {padding-top: 0%}
-}
-/**Fade in animation coming from left**/
-@keyframes fadeinleft {
-	from {opacity: 0;}
-	to {opacity: 1;}
-	from {padding-right: 10%;}
-	to {padding-right:0%;}
-}
-/**Fade in animation coming from center**/
-@keyframes fadeincenter {
-	from {opacity: 0;}
-	to {opacity: 1;}
-}
-@keyframes shrinkin {
-	from {opacity: 0;}
-	to {opacity: 1;}
-	from {font-size: 6em;}
-	to {font-size: 1em;}
 }
