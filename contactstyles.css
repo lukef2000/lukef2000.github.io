@@ -1,3 +1,19 @@
+body, html {
+	height: 100%;
+}
+.parallax1, .parallax2, .parallax3 {
+  	position: relative;
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	z-index: -1;
+  	opacity: 0.85;
+}
+.parallax1 {
+	background-position: bottom;
+	background-image: url("https://static.pexels.com/photos/5199/hands-coffee-cup-apple.jpg");
+	height: 100%;
+}
 /**Styling the description text**/
 #description {
 	color: white;
