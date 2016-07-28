@@ -2,8 +2,8 @@ body, html {
 	height: 100%;
 }
 .parallax1, .parallax2, .parallax3 {
-  	position: fixed;
-  	background-attachment: fixed;
+  	position: relative;
+  	background-attachment: scroll;
   	background-repeat: no-repeat;
   	background-size: cover;
   	z-index: -1;
