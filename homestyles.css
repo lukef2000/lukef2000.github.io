@@ -1,0 +1,164 @@
+/**Styling the background image**/
+body, html {
+	height: 100%;
+}
+.parallax1, .parallax2, .parallax3 {
+  	position: relative;
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	z-index: -1;
+  	opacity: 0.85;
+}
+.parallax1 {
+	background-position: bottom;
+	background-image: url("https://images.unsplash.com/photo-1468912229911-3089a757b813?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f2a25b0ece27ad5ddfca14950551c7f5");
+	height: 100%;
+}
+.parallax2 {
+	background-position: center;
+	background-image: url("https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9bd244971b9cb52a8418cf2f66fce464");
+	height: 100%;
+}
+.parallax3 {
+	background-position: bottom;
+	background-image: url("https://static.pexels.com/photos/7095/people-coffee-notes-tea-large.jpg");
+	height: 100%;
+}
+/**Styling my image**/
+.myimg {
+	opacity: 0;
+	animation-name: myimgfadein;
+  	animation-duration: 1s;
+  	animation-delay: 1s;
+  	animation-fill-mode: forwards;
+  	z-index: 10;
+}
+/**Styling my name**/
+#whitespace {
+  width: 100%;
+  color: white;
+  background-color: white;
+  padding: 50px 80px;
+  text-align: justify;
+}
+#footer {
+  width: 100%;
+  color: #111111;
+  background-color: white;
+  padding: 50px 80px;
+  text-align: justify;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  font: 2em "Lato", sans-serif;
+  vertical-align: middle;
+}
+.caption span.border {
+  background-color: #FFFFFF;
+  color: #111111;
+  padding: 18px;
+  letter-spacing: 6px;
+}
+#bornzim {
+  color: #111111;
+  font: 2em "Lato", sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+#description {
+  color: black;
+  text-align: center;
+  font: 1em "Lato", sans-serif;
+  letter-spacing: 2px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+#myidea {
+  color: #111111;
+  font: 2em "Lato", sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding-top: 15%;
+}
+#mymenu {
+  color: #111111;
+  font: 2em "Lato", sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+/**Styling the Navigation Bar**/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	opacity: 0.95;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	left: 0px;
+	top: 0px;
+	font: 1.1em "Lato", sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+/**Styling the navigation bar**/
+li {
+	float: left;
+}
+/**Styling the Navigation Bar**/
+li a {
+	display: block;
+	color: #111111;
+	text-align: center;
+	padding : 1em 1.2em;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	transition-delay: 0.2s;
+}
+/**Styling the Navigation Bar on hover**/
+li a:hover{
+	background-color: #111111;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	transition-delay: 0s;
+}
+/**Styling the navigation bar when one page is selected**/
+.active {
+	background-color: #A6A6A6;
+}
+/**Stopping the hover animation for selected pages on the Navigation Bar**/
+.active:hover{
+	background-color: #A6A6A6;
+	color: #111111;
+}
+/**Fade in animation coming from top**/
+@keyframes fadeintop {
+	from {opacity: 0;}
+	to {opacity: 1;}
+	from {padding-top: 5%;}
+	to {padding-top: 0%}
+}
+/**Fade in animation coming from left**/
+@keyframes fadeinleft {
+	from {opacity: 0;}
+	to {opacity: 1;}
+	from {padding-right: 10%;}
+	to {padding-right:0%;}
+}
+/**Fade in animation coming from center**/
+@keyframes fadeincenter{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
